@@ -1,0 +1,56 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+    <title>Clown Game - Game of Clown</title>
+
+    <link rel="stylesheet" href="style.css">
+</head>
+
+<body>
+
+    <main class="game-container">
+
+        <h1>Clown Game - Game of Clown</h1>
+
+        <p class="instructions">
+            Identify the species of Clown from the image
+        </p>
+
+        <div class="score-container">
+            <span>Score: <strong id="score">0</strong></span>
+            <span>Question: <strong id="question-number">1</strong></span>
+        </div>
+
+        <div class="image-container">
+            <img id="fish-image" src="" alt="Anemonefish to identify">
+        </div>
+
+        <div class="guess-container">
+
+            <label for="species-select">
+                What Clown?
+            </label>
+
+            <select id="species-select">
+            </select>
+            <button id="submit-button">
+                Guess
+            </button>
+
+        </div>
+
+        <div id="result" class="result"></div>
+
+        <button id="next-button" class="next-button">
+            Next Fish
+        </button>
+
+    </main>
+
+    <script src="script.js"></script>
+
+</body>
+</html>

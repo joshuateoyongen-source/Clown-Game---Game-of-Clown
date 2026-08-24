@@ -1,0 +1,187 @@
+* {
+    box-sizing: border-box;
+}
+
+body {
+    margin: 0;
+    min-height: 100vh;
+
+    font-family: Arial, Helvetica, sans-serif;
+
+    background: linear-gradient(
+        180deg,
+        #0077b6,
+        #023e8a
+    );
+
+    color: white;
+
+    display: flex;
+    justify-content: center;
+    align-items: center;
+
+    padding: 20px;
+}
+
+.game-container {
+    width: 100%;
+    max-width: 800px;
+
+    background: rgba(255, 255, 255, 0.95);
+
+    color: #222;
+
+    border-radius: 20px;
+
+    padding: 30px;
+
+    box-shadow: 0 10px 30px rgba(0, 0, 0, 0.3);
+
+    text-align: center;
+}
+
+h1 {
+    margin-top: 0;
+    margin-bottom: 5px;
+
+    font-size: 36px;
+
+    color: #023e8a;
+}
+
+.instructions {
+    margin-top: 5px;
+    color: #555;
+}
+
+.score-container {
+    display: flex;
+    justify-content: space-between;
+
+    margin: 25px 0 15px;
+
+    font-size: 18px;
+}
+
+.image-container {
+    width: 100%;
+
+    background: #eee;
+
+    border-radius: 15px;
+
+    overflow: hidden;
+
+    margin-bottom: 25px;
+}
+
+#fish-image {
+    display: block;
+
+    width: 100%;
+
+    max-height: 500px;
+
+    object-fit: contain;
+}
+
+.guess-container {
+    display: flex;
+    flex-direction: column;
+
+    gap: 12px;
+}
+
+.guess-container label {
+    font-size: 20px;
+    font-weight: bold;
+}
+
+select {
+    width: 100%;
+
+    padding: 14px;
+
+    font-size: 16px;
+
+    border: 2px solid #0077b6;
+
+    border-radius: 10px;
+
+    background: white;
+
+    cursor: pointer;
+}
+
+button {
+    border: none;
+
+    border-radius: 10px;
+
+    padding: 14px 20px;
+
+    font-size: 17px;
+
+    font-weight: bold;
+
+    cursor: pointer;
+
+    transition: 0.2s;
+}
+
+#submit-button {
+    background: #0077b6;
+    color: white;
+}
+
+#submit-button:hover {
+    background: #005f8f;
+}
+
+.next-button {
+    background: #00a896;
+    color: white;
+
+    margin-top: 15px;
+
+    display: none;
+
+    width: 100%;
+}
+
+.next-button:hover {
+    background: #008f7a;
+}
+
+.result {
+    margin-top: 20px;
+
+    font-size: 20px;
+
+    font-weight: bold;
+
+    min-height: 30px;
+}
+
+.correct {
+    color: #008000;
+}
+
+.incorrect {
+    color: #d00000;
+}
+
+@media (max-width: 600px) {
+
+    .game-container {
+        padding: 20px;
+    }
+
+    h1 {
+        font-size: 28px;
+    }
+
+    .score-container {
+        font-size: 16px;
+    }
+}
